@@ -1,0 +1,342 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3{font-size: 20px;}
+
+/*Hero image and the hero-image text styling*/      
+.hero-image {
+    background-image: url("images/mk.jpg");
+    top: 0em;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    order: 1;
+}           
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.p-herotext{font-size: 25px;}
+
+.hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    font-size: 15px;
+    padding: 13px 28px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+}       
+.hero-text button:hover {
+    background-color: #1a8cff;
+    color: white;
+}
+
+/* Top navigation stylings*/
+#topnav{
+    margin-top: 8px;
+    width: 100%;
+    height: auto;
+    color: white;
+    position: relative;
+    list-style-type: none;   
+}
+#topnav li{
+    float: right;
+    margin: 0px 12px;
+}
+#topnav li:first-child{
+    margin-right: 7%;
+}
+#topnav li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 7px 10px;
+    border-radius: 4px;
+}
+#topnav li a:hover:not(.active) {
+    border-bottom: 2px white solid;
+    cursor: pointer;
+}
+#topnav li a:active{
+    background-color: #1a8cff;
+}
+
+/*Main section styling*/
+#main_section{
+    height: auto;
+    width: 100%;
+}
+
+[class|=polaroid] {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: auto;
+}
+.image_main{
+    height: 200px;
+    width: 100%;
+    border-bottom-color: red;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+div.image_description {
+    text-align: center;
+    padding: 5px 2px;
+
+}
+
+/*.flex-container0*/
+
+/*making the .flex-container1*/
+.flex-container1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    order: 2;
+    
+    
+}
+/*.flex-container1 > div, h1{
+    margin-top: 10px;
+    margin-bottom: 10px;   
+}*/
+
+[class|=h1]{
+    font-size: 20px; 
+    margin: 10px 5px 10px 5px;
+    width: 35%;
+    background-color: #004080;
+    color: white;
+    padding: 15px;
+    box-shadow: 10px 10px grey;
+    margin-top: 50px;
+
+}
+.h1-herotext{ 
+    font-size: 50px;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: transparent;
+    box-shadow: 0px 0px transparent;
+}
+
+
+.flex-summary{
+    display: flex;
+    flex-direction: column;
+    width: 100%;  
+}
+.text-summary{
+    width: 80%;
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: justify;
+}
+.h1-summary{
+    width: 40%;
+    margin-top: 10px;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 4px;
+}
+/*Flex-experience div*/
+.flex-experience1, .flex-experience2, .flex-education1, .flex-education2, .flex-educationip1, .flex-educationip2, .flex-skill1,
+.container{
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.polaroid-nysc, .polaroid-mcl, .polaroid-googleit, .polaroid-unn, .polaroid-gcp, .polaroid-icsi, .polaroid-skills {
+    width: 29%; 
+    margin: 5px 0px 5px 5px;
+}
+.text-nysc, .text-mcl, .text-googleit, .text-unn, .text-gcp, .text-icsi, .text-skills { 
+    width: 64%; 
+    margin: 5px 5px 5px 0px; 
+    color:white; 
+    background-color: #00264d;
+    padding: 15px;
+}
+.text-nysc, .text-mcl, .text-googleit, .text-unn, .text-gcp, .text-icsi, .text-skills > p{
+    text-align: justify; 
+    align-content: center;
+}
+.text-skills{
+    background-color: white;
+    color: black;
+}
+.skills{
+    background-color: #00264d;
+    display: inline-block;
+    margin: 2px;
+    padding: 7px;
+    color: white;
+    border-radius: 5px;
+}
+
+/*slideshow gallery*/
+* {
+    box-sizing: border-box;
+  }
+  
+  img {
+    vertical-align: middle;
+    overflow: hidden;
+    width: 95%;
+    
+  }
+  .slide_images{
+    height: 410px;
+    width: 95%; 
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+      display: none;
+      width: 95%;
+      margin: 5px 5px 0px 5px;
+      overflow: hidden;
+  }
+  #slide1{
+      display: block;
+  }
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color:  #3399ff;
+    padding: 2px 15px;
+    color: white;
+    width: 95%;
+    margin: 0px 5px 0px 5px;
+  }
+  .row{
+    width: 95%;
+    margin: 0px 5px 0px 5px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+    height: 80px;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+/*footer*/
+footer{ 
+    width: 100%; 
+    height: auto; 
+    order: 21;
+    margin: 20px 0px 0px 0px;
+}
+.flex-footer{
+    padding: 5px;
+    background-color: #602020;
+    color: white;
+}
+
+/*footer*/
+footer{ 
+    width: 100%; 
+    height: auto; 
+    order: 21;
+    margin: 20px 0px 0px 0px;
+}
+.flex-footer{
+    padding: 30px 5px;
+    background-color: #602020;
+    color: white;
+}
+.h3-footer{margin-left: 20px;}
+.footer-icons{height: 16px; width: 16px;}
