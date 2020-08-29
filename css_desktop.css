@@ -53,12 +53,16 @@ h3{font-size: 20px;}
     position: relative;
     list-style-type: none;   
 }
+#menu-icon, #closeBtn{
+    display: none;
+}
 #topnav li{
     float: right;
     margin: 0px 12px;
 }
+/*Push reference away from border-right end*/
 #topnav li:first-child{
-    margin-right: 7%;
+    margin-right: 5%;
 }
 #topnav li a{
     display: block;
@@ -80,7 +84,7 @@ h3{font-size: 20px;}
     height: auto;
     width: 100%;
 }
-
+/*Style Polaroid Images*/
 [class|=polaroid] {
     width: 80%;
     background-color: white;
@@ -88,7 +92,7 @@ h3{font-size: 20px;}
     height: auto;
 }
 .image_main{
-    height: 200px;
+    height: 210px;
     width: 100%;
     border-bottom-color: red;
     border-bottom-style: solid;
@@ -180,7 +184,7 @@ div.image_description {
     margin: 5px 5px 5px 0px; 
     color:white; 
     background-color: #00264d;
-    padding: 15px;
+    padding: 20px;
 }
 .text-nysc, .text-mcl, .text-googleit, .text-unn, .text-gcp, .text-icsi, .text-skills > p{
     text-align: justify; 
@@ -321,20 +325,7 @@ footer{
     margin: 20px 0px 0px 0px;
 }
 .flex-footer{
-    padding: 5px;
-    background-color: #602020;
-    color: white;
-}
-
-/*footer*/
-footer{ 
-    width: 100%; 
-    height: auto; 
-    order: 21;
-    margin: 20px 0px 0px 0px;
-}
-.flex-footer{
-    padding: 30px 5px;
+    padding: 30px 20px;
     background-color: #602020;
     color: white;
 }
