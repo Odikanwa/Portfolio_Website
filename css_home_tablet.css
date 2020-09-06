@@ -1,10 +1,10 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-size: 16px;
+    font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
 }
-h3{font-size: 20px;}
+h3{font-size: 15px;}
 
 /*Hero image and the hero-image text styling*/      
 .hero-image {
@@ -26,14 +26,13 @@ h3{font-size: 20px;}
     transform: translate(-50%, -50%);
     color: white;
 }
-.p-herotext{font-size: 25px;}
+.p-herotext{font-size: 20px;}
 
 .hero-text button {
     border: none;
     outline: 0;
     display: inline-block;
-    font-size: 15px;
-    padding: 13px 28px;
+    padding: 10px 25px;
     color: black;
     background-color: #ddd;
     text-align: center;
@@ -45,8 +44,8 @@ h3{font-size: 20px;}
 }
 
 /* Top navigation stylings*/
-#topnav{
-    margin-top: 8px;
+.topnav{
+    margin-top: 6px;
     width: 100%;
     height: auto;
     color: white;
@@ -56,43 +55,39 @@ h3{font-size: 20px;}
 #menu-icon, #closeBtn{
     display: none;
 }
-#topnav li{
+.topnav li{
     float: right;
-    margin: 0px 12px;
+    margin: 0px 8px;
 }
-/*Push reference away from border-right end*/
-#topnav li:first-child{
-    margin-right: 5%;
-}
-#topnav li a{
+
+.topnav li:first-child{margin-right: 5%;}
+.topnav li a{
     display: block;
     text-align: center;
     text-decoration: none;
-    padding: 7px 10px;
-    border-radius: 4px;
+    padding: 5px 8px;
+    border-radius: 3px;
 }
-#topnav li a:hover:not(.active) {
-    border-bottom: 2px white solid;
-    cursor: pointer;
-}
-#topnav li a:active{
-    background-color: #1a8cff;
-}
+.topnav li a:link{color: white;}
+.topnav li a:visited{color: white;}
+.topnav li a:hover:not(.active) {border-bottom: 2px white solid;cursor: pointer;}
+.topnav li a:active{background-color: #1a8cff;}
+.active{background-color: #1a8cff;}
 
 /*Main section styling*/
 #main_section{
     height: auto;
     width: 100%;
 }
-/*Style Polaroid Images*/
+
 [class|=polaroid] {
-    width: 80%;
+    width: 60%;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: auto;
 }
 .image_main{
-    height: 210px;
+    height: 150px;
     width: 100%;
     border-bottom-color: red;
     border-bottom-style: solid;
@@ -123,25 +118,22 @@ div.image_description {
 }*/
 
 [class|=h1]{
-    font-size: 20px; 
+    font-size: 18px; 
     margin: 10px 5px 10px 5px;
     width: 35%;
     background-color: #004080;
     color: white;
-    padding: 15px;
+    padding: 10px;
     box-shadow: 10px 10px grey;
-    margin-top: 50px;
 
 }
 .h1-herotext{ 
-    font-size: 50px;
-    width: 100%;
+    font-size: 30px;
+    width: 60%;
     background-color: transparent;
     box-shadow: transparent;
     box-shadow: 0px 0px transparent;
 }
-
-
 .flex-summary{
     display: flex;
     flex-direction: column;
@@ -160,7 +152,7 @@ div.image_description {
     margin-right: 30%;
     background-color: #004080;
     color: white;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     box-shadow: 10px 10px 5px grey;
     border-radius: 4px;
@@ -168,9 +160,7 @@ div.image_description {
 /*Flex-experience div*/
 .flex-experience1, .flex-experience2, .flex-education1, .flex-education2, .flex-educationip1, .flex-educationip2, .flex-skill1,
 .container{
-    width: 80%;
-    margin-right: 10%;
-    margin-left: 10%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -184,7 +174,7 @@ div.image_description {
     margin: 5px 5px 5px 0px; 
     color:white; 
     background-color: #00264d;
-    padding: 20px;
+    padding: 10px;
 }
 .text-nysc, .text-mcl, .text-googleit, .text-unn, .text-gcp, .text-icsi, .text-skills > p{
     text-align: justify; 
@@ -215,11 +205,11 @@ div.image_description {
     
   }
   .slide_images{
-    height: 410px;
+    height: 300px;
     width: 95%; 
     overflow: hidden;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
   }
   
   /* Position the image container (needed to position the left and right arrows) */
@@ -274,7 +264,7 @@ div.image_description {
   /* Number text (1/3 etc) */
   .numbertext {
     color: #f2f2f2;
-    font-size: 18px;
+    font-size: 14px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
@@ -306,10 +296,10 @@ div.image_description {
     width: 16.66%;
   }
   
-  /* Add a transparency effect for thumnbail images */
+  /* Add a transparency effect for thumnbnail images */
   .demo {
     opacity: 0.6;
-    height: 80px;
+    height: 55px;
   }
   
   .active,
@@ -325,9 +315,9 @@ footer{
     margin: 20px 0px 0px 0px;
 }
 .flex-footer{
-    padding: 30px 20px;
+    padding: 25px 10px;
     background-color: #602020;
     color: white;
 }
-.h3-footer{margin-left: 20px;}
-.footer-icons{height: 16px; width: 16px;}
+.h3-footer{margin-left: 15px;}
+.footer-icons{ height: 14px; width: 14px;}

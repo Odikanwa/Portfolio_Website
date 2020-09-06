@@ -1,13 +1,23 @@
-function openNav() {
-  
+$(document).ready(function(){
+
+  $(".topnav a").click(function(){
+    $(".topnav a").removeClass('active');
+    $(this).addClass('active');
+  })
+
+});
+
+
+function openNav() { 
   document.getElementById("topnav").style.width = "100%";
 }
 
 function closeNav() {
   document.getElementById("topnav").style.width = "0%";
-  
 }
-
+function contactCloseNav() {
+  document.getElementById("topnav").style.width = "0%";
+}
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -36,4 +46,18 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+// Add active class to the current button (highlight it)
+/*var header = document.getElementById("topnav");
+var links = header.getElementsByTagName("a");
+for (var i = 0; i < links.length; i++) {
+  links[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  if (current.length > 0) { 
+    current[0].className = current[0].className.replace(" active", "");
+  }
+  this.className += " active";
+  });
+}*/
+
 

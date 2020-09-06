@@ -4,9 +4,7 @@ body, html {
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
 }
-* {
-    box-sizing: border-box;
-  }
+* {box-sizing: border-box;}
 h3{font-size: 15px;}
 
 /*Hero image and the hero-image text styling*/      
@@ -44,10 +42,7 @@ h3{font-size: 15px;}
     text-align: center;
     cursor: pointer;
 }       
-.hero-text button:hover {
-    background-color: #1a8cff;
-    color: white;
-}
+.hero-text button:hover { background-color: #1a8cff; color: white;}
 
 /* Top navigation stylings*/
 #menu-icon-div{
@@ -68,7 +63,7 @@ h3{font-size: 15px;}
 #menu-icon a:hover, #menu-icon a:focus, #menu-icon:active{
     color: #1a8cff;
 }
-#topnav{
+.topnav{
     display: block;
     margin-top: 0px;
     margin-left: 0px;
@@ -91,9 +86,7 @@ h3{font-size: 15px;}
     color: white;
     text-decoration: none; 
 }
-.closebtn a:hover, .closebtn a:focus, .closebtn:active{
-    color: #1a8cff;
-}
+.closebtn a:hover, .closebtn a:focus, .closebtn:active{ color: #1a8cff;}
 .menu-list{
     width: 100%;
     color: white;
@@ -103,9 +96,7 @@ h3{font-size: 15px;}
     display: block;
     padding-left: 10%;
 }
-.menu-list li{
-    margin-left: 0px;
-}
+.menu-list li{margin-left: 0px;}
 .menu-list a{
     display: block;
     text-align: left;
@@ -113,14 +104,10 @@ h3{font-size: 15px;}
     border-bottom: 1px white solid;
     padding: 10px;
 }
-.menu-list a:hover, .menu-list a:focus, .menu-list a:active{
-    background-color: #1a8cff;
-    cursor: pointer;
-}
-#main_section{
-    height: auto;
-    width: 100%;
-}
+.menu-list a:link{color: white;}
+.menu-list a:visited{color: white; text-decoration-color: #602020;}
+.menu-list a:hover, .menu-list a:focus, .menu-list a:active{background-color: #1a8cff; cursor: pointer; text-decoration: none;}
+#main_section{ height: auto; width: 100%;}
 
 [class|=polaroid] {
     width: 60%;
@@ -135,11 +122,7 @@ h3{font-size: 15px;}
     border-bottom-style: solid;
     border-bottom-width: 2px;
 }
-div.image_description {
-    text-align: center;
-    padding: 5px 2px;
-
-}
+div.image_description { text-align: center; padding: 5px 2px;}
 
 /*making the .flex-container1*/
 .flex-container1{
@@ -149,14 +132,7 @@ div.image_description {
     flex-direction: row;
     flex-wrap: wrap;
     order: 2;
-    
-    
 }
-/*.flex-container1 > div, h1{
-    margin-top: 10px;
-    margin-bottom: 10px;   
-}*/
-
 [class|=h1]{
     font-size: 18px; 
     margin: 10px 5px 10px 5px;
@@ -165,7 +141,6 @@ div.image_description {
     color: white;
     padding: 10px;
     box-shadow: 10px 10px grey;
-
 }
 .h1-herotext{ 
     font-size: 25px;
@@ -174,9 +149,6 @@ div.image_description {
     box-shadow: transparent;
     box-shadow: 0px 0px transparent;
 }
-
-
-
 .flex-summary{
     display: flex;
     flex-direction: column;
@@ -223,10 +195,7 @@ div.image_description {
     text-align: justify; 
     align-content: center;
 }
-.text-skills{
-    background-color: white;
-    color: black;
-}
+.text-skills{ background-color: white; color: black;}
 .skills{
     background-color: #00264d;
     display: inline-block;
@@ -238,43 +207,31 @@ div.image_description {
 
 /*slideshow gallery*/
   
-  img {
-    vertical-align: middle;
-    overflow: hidden;
-    width: 95%;
-    
-  }
-  .slide_images{
+img{ vertical-align: middle; overflow: hidden; width: 95%;}
+.slide_images{
     height: 220px;
     width: 95%; 
     overflow: hidden;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-  }
+}
   
-  /* Position the image container (needed to position the left and right arrows) */
-  .container {
-    position: relative;
-  }
+/* Position the image container (needed to position the left and right arrows) */
+.container{ position: relative;}
   
-  /* Hide the images by default */
-  .mySlides {
+/* Hide the images by default */
+.mySlides{
       display: none;
       width: 95%;
       margin: 5px 5px 0px 5px;
       overflow: hidden;
-  }
-  #slide1{
-      display: block;
-  }
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
-    cursor: pointer;
-  }
+}
+#slide1{ display: block;}
+/* Add a pointer when hovering over the thumbnail images */
+.cursor{ cursor: pointer;}
   
-  /* Next & previous buttons */
-  .prev,
-  .next {
+/* Next & previous buttons */
+.prev, .next{
     cursor: pointer;
     position: absolute;
     top: 40%;
@@ -287,65 +244,37 @@ div.image_description {
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
-  }
+}
   
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Number text (1/3 etc) */
+/* Position the "next button" to the right */
+.next { right: 0; border-radius: 3px 0 0 3px;} 
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover{ background-color: rgba(0, 0, 0, 0.8);}
+/* Number text (1/3 etc) */
   .numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
+}
   
-  /* Container for image text */
-  .caption-container {
+/* Container for image text */
+.caption-container{
     text-align: center;
     background-color:  #3399ff;
     padding: 2px 15px;
     color: white;
     width: 95%;
     margin: 0px 5px 0px 5px;
-  }
-  .row{
-    width: 95%;
-    margin: 0px 5px 0px 5px;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
+}
+.row{ width: 95%; margin: 0px 5px 0px 5px;}
+.row:after { content: ""; display: table; clear: both;}
   /* Six columns side by side */
-  .column {
-    float: left;
-    width: 16.66%;
-  }
-  
-  /* Add a transparency effect for thumnbail images */
-  .demo {
-    opacity: 0.6;
-    height: 40px;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
+.column{ float: left; width: 16.66%;}
+/* Add a transparency effect for thumnbail images */
+.demo{ opacity: 0.6; height: 40px;}
+.active, .demo:hover { opacity: 1;}
 
 /*footer*/
 footer{ 

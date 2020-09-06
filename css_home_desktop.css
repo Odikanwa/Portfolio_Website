@@ -1,10 +1,10 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
-h3{font-size: 15px;}
+h3{font-size: 20px;}
 
 /*Hero image and the hero-image text styling*/      
 .hero-image {
@@ -26,13 +26,14 @@ h3{font-size: 15px;}
     transform: translate(-50%, -50%);
     color: white;
 }
-.p-herotext{font-size: 20px;}
+.p-herotext{font-size: 25px;}
 
 .hero-text button {
     border: none;
     outline: 0;
     display: inline-block;
-    padding: 10px 25px;
+    font-size: 15px;
+    padding: 13px 28px;
     color: black;
     background-color: #ddd;
     text-align: center;
@@ -44,63 +45,48 @@ h3{font-size: 15px;}
 }
 
 /* Top navigation stylings*/
-#topnav{
-    margin-top: 6px;
+.topnav{
+    margin-top: 8px;
     width: 100%;
     height: auto;
     color: white;
     position: relative;
     list-style-type: none;   
 }
-#menu-icon, #closeBtn{
-    display: none;
-}
-#topnav li{
-    float: right;
-    margin: 0px 8px;
-}
-#topnav li:first-child{
-    margin-right: 5%;
-}
-#topnav li a{
+#menu-icon, #closeBtn{ display: none;}
+.topnav li{ float: right; margin: 0px 12px;}
+/*Push reference away from border-right end*/
+.topnav li:first-child{ margin-right: 5%;}
+.topnav li a{
     display: block;
     text-align: center;
     text-decoration: none;
-    padding: 5px 8px;
-    border-radius: 3px;
+    padding: 7px 10px;
+    border-radius: 4px;
 }
-#topnav li a:hover:not(.active) {
-    border-bottom: 2px white solid;
-    cursor: pointer;
-}
-#topnav li a:active{
-    background-color: #1a8cff;
-}
+.topnav li a:link{color: white;}
+.topnav li a:visited{color: white;}
+.topnav li a:hover:not(.active) { border-bottom: 2px white solid; cursor: pointer;}
+.topnav li a:active{ background-color: #1a8cff;}
+.active{background-color: #1a8cff;}
 
 /*Main section styling*/
-#main_section{
-    height: auto;
-    width: 100%;
-}
-
+#main_section{height: auto; width: 100%;}
+/*Style Polaroid Images*/
 [class|=polaroid] {
-    width: 60%;
+    width: 80%;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: auto;
 }
 .image_main{
-    height: 150px;
+    height: 210px;
     width: 100%;
     border-bottom-color: red;
     border-bottom-style: solid;
     border-bottom-width: 2px;
 }
-div.image_description {
-    text-align: center;
-    padding: 5px 2px;
-
-}
+div.image_description { text-align: center; padding: 5px 2px;}
 
 /*.flex-container0*/
 
@@ -121,23 +107,23 @@ div.image_description {
 }*/
 
 [class|=h1]{
-    font-size: 18px; 
+    font-size: 20px; 
     margin: 10px 5px 10px 5px;
     width: 35%;
     background-color: #004080;
     color: white;
-    padding: 10px;
+    padding: 15px;
     box-shadow: 10px 10px grey;
+    margin-top: 50px;
 
 }
 .h1-herotext{ 
-    font-size: 30px;
-    width: 60%;
+    font-size: 50px;
+    width: 100%;
     background-color: transparent;
     box-shadow: transparent;
     box-shadow: 0px 0px transparent;
 }
-
 
 
 .flex-summary{
@@ -158,7 +144,7 @@ div.image_description {
     margin-right: 30%;
     background-color: #004080;
     color: white;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     box-shadow: 10px 10px 5px grey;
     border-radius: 4px;
@@ -166,7 +152,9 @@ div.image_description {
 /*Flex-experience div*/
 .flex-experience1, .flex-experience2, .flex-education1, .flex-education2, .flex-educationip1, .flex-educationip2, .flex-skill1,
 .container{
-    width: 100%;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -180,7 +168,7 @@ div.image_description {
     margin: 5px 5px 5px 0px; 
     color:white; 
     background-color: #00264d;
-    padding: 10px;
+    padding: 20px;
 }
 .text-nysc, .text-mcl, .text-googleit, .text-unn, .text-gcp, .text-icsi, .text-skills > p{
     text-align: justify; 
@@ -211,11 +199,11 @@ div.image_description {
     
   }
   .slide_images{
-    height: 300px;
+    height: 410px;
     width: 95%; 
     overflow: hidden;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
   }
   
   /* Position the image container (needed to position the left and right arrows) */
@@ -270,7 +258,7 @@ div.image_description {
   /* Number text (1/3 etc) */
   .numbertext {
     color: #f2f2f2;
-    font-size: 14px;
+    font-size: 18px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
@@ -302,10 +290,10 @@ div.image_description {
     width: 16.66%;
   }
   
-  /* Add a transparency effect for thumnbnail images */
+  /* Add a transparency effect for thumnbail images */
   .demo {
     opacity: 0.6;
-    height: 55px;
+    height: 80px;
   }
   
   .active,
@@ -321,22 +309,9 @@ footer{
     margin: 20px 0px 0px 0px;
 }
 .flex-footer{
-    padding: 5px;
+    padding: 30px 20px;
     background-color: #602020;
     color: white;
 }
-
-/*footer*/
-footer{ 
-    width: 100%; 
-    height: auto; 
-    order: 21;
-    margin: 20px 0px 0px 0px;
-}
-.flex-footer{
-    padding: 25px 10px;
-    background-color: #602020;
-    color: white;
-}
-.h3-footer{margin-left: 15px;}
-.footer-icons{ height: 14px; width: 14px;}
+.h3-footer{margin-left: 20px;}
+.footer-icons{height: 16px; width: 16px;}
