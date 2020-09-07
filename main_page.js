@@ -1,23 +1,29 @@
+//jQuery for highlighting active menu links
 $(document).ready(function(){
-
   $(".topnav a").click(function(){
     $(".topnav a").removeClass('active');
     $(this).addClass('active');
   })
-
 });
-
-
+//Open side navigation for mobile view
 function openNav() { 
   document.getElementById("topnav").style.width = "100%";
 }
-
+//close side navigation for mobile view
 function closeNav() {
   document.getElementById("topnav").style.width = "0%";
 }
-function contactCloseNav() {
-  document.getElementById("topnav").style.width = "0%";
+
+function contactMenuList() {
+  var x = screen.width;
+  if(x < 470){
+    document.getElementById("topnav").style.width = "0%";
+  }else{
+    document.getElementById("topnav").style.width = "100%";
+  }
 }
+
+//design the photo gallery
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -46,18 +52,4 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-
-// Add active class to the current button (highlight it)
-/*var header = document.getElementById("topnav");
-var links = header.getElementsByTagName("a");
-for (var i = 0; i < links.length; i++) {
-  links[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("active");
-  if (current.length > 0) { 
-    current[0].className = current[0].className.replace(" active", "");
-  }
-  this.className += " active";
-  });
-}*/
-
 
